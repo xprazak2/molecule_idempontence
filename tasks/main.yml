@@ -1,0 +1,7 @@
+---
+- name: 'Run script on target host'
+  script: script.sh
+  register: output
+
+- debug:
+    msg: "{{ output }}"
